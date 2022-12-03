@@ -48,8 +48,7 @@ python manage.py runserver
 
 - create user via /api/user/register/;
 - get access token via /api/user/token/;
-- use access token in Authorization header for all other requests;
-- use refresh token in Authorization header for /api/user/token/refresh/ request.
+- use access token in Authorization header for all other requests.
 
 ### Also you can run project in docker container:
 
@@ -68,5 +67,4 @@ docker-compose.yml contains default values for environment variables. You can ch
 - Go to `127.0.0.1:8000/api/` and check project endpoints via DRF interface;
 - You can create new admin user: enter container `docker exec -it <container_name> bash`, and create in from there;
 - get access token via /api/user/token/;
-- use access token in Authorization header for all other requests;
-- use refresh token in Authorization header for /api/user/token/refresh/ request.
+- use access token in Authorization header for all other requests.
