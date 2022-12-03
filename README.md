@@ -1,17 +1,17 @@
 # Cinema-API
 
-API service for cinema management written on Django Rest Framework 
+API service for cinema management written on Django Rest Framework.
 
 ### Features
 
-- JWT authenticated
-- Admin panel /admin/
-- Documentation is located at /api/doc/swagger/
-- Managing orders and tickets
-- Creating movies with genres, actors and image
-- Creating cinema halls
-- Adding movie sessions
-- Filtering movies and movie sessions
+- JWT authenticated;
+- Admin panel /admin/;
+- Documentation is located at /api/doc/swagger/;
+- Managing orders and tickets;
+- Creating movies with genres, actors and image;
+- Creating cinema halls;
+- Adding movie sessions;
+- Filtering movies and movie sessions.
 
 ## Installing using Github
 
@@ -45,25 +45,28 @@ python manage.py runserver
 ```
 
 ### Getting access:
-- create user via /api/user/register/
-- get access token via /api/user/token/
-- use access token in Authorization header for all other requests
-- use refresh token in Authorization header for /api/user/token/refresh/ request
+
+- create user via /api/user/register/;
+- get access token via /api/user/token/;
+- use access token in Authorization header for all other requests;
+- use refresh token in Authorization header for /api/user/token/refresh/ request.
 
 ### Also you can run project in docker container:
 
-Docker should be installed on your machine
+Docker should be installed on your machine.
 
 ```shell
 docker-compose build
 docker-compose up
 ```
 
-docker-compose.yml contains default values for environment variables. You can change them in docker-compose.yml or in .env file
+docker-compose.yml contains default values for environment variables. You can change them in docker-compose.yml or in
+.env file.
 
 ### Getting access via docker container
+
 - Go to `127.0.0.1:8000/api/` and check project endpoints via DRF interface;
 - You can create new admin user: enter container `docker exec -it <container_name> bash`, and create in from there;
-- get access token via /api/user/token/
-- use access token in Authorization header for all other requests
-- use refresh token in Authorization header for /api/user/token/refresh/ request
+- get access token via /api/user/token/;
+- use access token in Authorization header for all other requests;
+- use refresh token in Authorization header for /api/user/token/refresh/ request.
