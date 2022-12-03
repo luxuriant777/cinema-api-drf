@@ -16,7 +16,7 @@ set DB_HOST=<your db hostname>
 set DB_NAME=<your db name>
 set DB_USER=<your db username>
 set DB_PASSWORD=<your db user password>
-set SECRET_KEY=<your secret key>
+set DJANGO_SECRET_KEY=<your secret key>
 python manage.py migrate
 python manage.py runserver
 ```
